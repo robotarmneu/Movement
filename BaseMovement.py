@@ -16,6 +16,7 @@ print("Board recognized")
 step = board.get_pin('d:46:o')
 direction = board.get_pin('d:48:o')
 enable = board.get_pin('a:8:o')
+enable.mode = pyfirmata.OUTPUT
 
 while True:
     enable.write(0)
